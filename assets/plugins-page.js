@@ -699,7 +699,7 @@ vllm-hust-ext extension check ${extensionId}`
     const format = value => `${value >= 0 ? "+" : ""}${value.toFixed(2)}%`;
     const value = Number.isFinite(result.gain) ? format(result.gain) : "—";
     panel.append(element("strong", result.gain < 0 ? "performance-negative" : "", value),
-      element("span", "", zh ? "吞吐提升 · vs Native" : "Throughput gain · vs Native"));
+      element("span", "", [result.modelLabel, zh ? "吞吐提升 · vs Native" : "Throughput gain · vs Native"].filter(Boolean).join(" · ")));
     if (result.comparisons.length) {
       const link = element("a", "plugin-public-effect-link", "Frontier ↗");
       link.href = "./leaderboard-runs.html#frontier";

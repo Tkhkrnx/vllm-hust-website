@@ -49,6 +49,7 @@
         || baseline.some(point => identity(point) !== identity(baseline[0]))) {
       throw new Error('Incomplete or inconsistent Native series');
     }
+    const modelLabel = frontier.cohorts.find(cohort => cohort.id === baseline[0].cohort_id)?.model.label;
     const ids = new Set();
     return new Map(data.entries.map(entry => {
       if (ids.has(entry.id) || ['baseline', 'baseline_id', 'pairs', 'ratios', 'gain'].some(key => key in entry)) {
@@ -66,7 +67,7 @@
         ? (Math.exp(comparisons.reduce((sum, row) => sum + Math.log1p(row.gain / 100), 0) / comparisons.length) - 1) * 100
         : null;
       return [entry.id, { ...entry, gain, count: comparisons.length, comparisons,
-        baseline_series_id: data.baseline.series_id }];
+        baseline_series_id: data.baseline.series_id, modelLabel }];
     }));
   }
   function compare(left, right, results) {
