@@ -771,9 +771,7 @@ vllm-hust-ext extension check ${extensionId}`
     const traits = workloadTags(item);
     if (traits) card.append(traits);
     const measured = performanceResults.get(item.id);
-    if (measured) card.append(performancePanel(measured));
-    const publicEffect = publicEffectPanel(item);
-    if (publicEffect) card.append(publicEffect);
+    card.append(performancePanel(measured || { gain: null, comparisons: [] }));
     const community = communityPanel(item);
     if (community) card.append(community);
     const compatibility = compatibilityPanel(item);
@@ -783,6 +781,8 @@ vllm-hust-ext extension check ${extensionId}`
     const details = element("details", "plugin-technical-details");
     details.append(element("summary", "", copy().details));
     const detailBody = element("div", "plugin-technical-body");
+    const publicEffect = publicEffectPanel(item);
+    if (publicEffect) detailBody.append(publicEffect);
     const compatibilityDetailsBlock = compatibilityDetails(item);
     if (compatibilityDetailsBlock) detailBody.append(compatibilityDetailsBlock);
     const facts = element("dl", "plugin-component-facts");
