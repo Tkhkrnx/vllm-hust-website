@@ -71,3 +71,18 @@ SHA256：`557cbf246b158b037f27896e276657dd4c32a7f0ff6dd11cb722fd021c7647f4`；38
 
 来源：[固定实验覆盖账本](https://github.com/vLLM-HUST/vllm-hust-dev-hub/blob/4b962ea46df6ed9d62bac904efd4733b29e5be8f/scripts/frontier_curves/catalog-coverage.json)。其中的本地原始归档路径和
 SHA256 用于追溯，并不表示归档已可公开下载。
+
+## 2026-09-27 增量复核
+
+对照昨日快照检查了 30 个仓库的默认分支及 17 个跟进线程，并读取发生变化的兼容性检查。没有发现新增、已能保持原 Frontier 配置直接补曲线的项目；这不表示所有未合并分支都经过完整审计。
+
+- KVCompression 更新到
+  [e51c566](https://github.com/vLLM-HUST/vllm-ascend-kvcompress-hust/blob/e51c566ae02791349956c5096d8670407e7a5344/src/vllm_ascend_kvcompress/provider.py#L383)，主要为版本/发布元数据变化；APC、MTP、async
+  的拒绝仍在。
+- SplitBatch 更新到
+  [8a36101](https://github.com/vLLM-HUST/vllm-ascend-split-batch-hust/blob/8a36101a796ee4915ed9ba563864258b405ed02e/src/vllm_ascend_split_batch/cascade_plugin.py#L235)。多
+  query 和 speculative/MTP 仍退回原生注意力；不能把该回退当成优化路径已生效。
+- AQK 的 [插件 PR #4](https://github.com/vLLM-HUST/vllm-ascend-adaptive-quantized-kv-hust/pull/4) 与
+  [Host PR #35](https://github.com/vLLM-HUST/vllm-ascend-hust/pull/35) 继续推进配置合同；仍缺校准 profile、BF16→C8
+  选择/加载和 cache-write 所有权，插件保持 import_only，尚无原配置硬件通过证据。
+- QuantizedKV、PegaFlow、LatchMoE、LayeredPrefill、vSpec、DiffSpec 默认头未变化，跟进线程中未见已解决前述阻断的新证据。
