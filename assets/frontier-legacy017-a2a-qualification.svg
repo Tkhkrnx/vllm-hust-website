@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.tick{font-size:13px;fill:#475569}.label{font-size:15px;fill:#334155}.pointlabel{font-size:14px;font-weight:700}.legend{font-size:15px;fill:#1e293b}</style>
+<text x="58" y="52" font-size="24" font-weight="700" fill="#0f172a">Legacy017 A2A qualification frontier — native dominates at C1/C2/C4</text>
+<text x="58" y="82" font-size="15" fill="#475569">DeepSeek-V2-Lite-W8A8 · 3× Ascend 910B2 · median of 3 × 60 s runs; faint dots are repeats</text>
+<line x1="112" y1="675.00" x2="1146" y2="675.00" stroke="#cbd5e1" stroke-dasharray="5 6" opacity="0.7"/>
+<text class="tick" x="97" y="680.00" text-anchor="end">10</text>
+<line x1="112" y1="553.53" x2="1146" y2="553.53" stroke="#cbd5e1" stroke-dasharray="5 6" opacity="0.7"/>
+<text class="tick" x="97" y="558.53" text-anchor="end">20</text>
+<line x1="112" y1="432.07" x2="1146" y2="432.07" stroke="#cbd5e1" stroke-dasharray="5 6" opacity="0.7"/>
+<text class="tick" x="97" y="437.07" text-anchor="end">30</text>
+<line x1="112" y1="310.60" x2="1146" y2="310.60" stroke="#cbd5e1" stroke-dasharray="5 6" opacity="0.7"/>
+<text class="tick" x="97" y="315.60" text-anchor="end">40</text>
+<line x1="112" y1="189.14" x2="1146" y2="189.14" stroke="#cbd5e1" stroke-dasharray="5 6" opacity="0.7"/>
+<text class="tick" x="97" y="194.14" text-anchor="end">50</text>
+<line x1="125.36" y1="150" x2="125.36" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="125.36" y="703" text-anchor="middle">58</text>
+<line x1="260.27" y1="150" x2="260.27" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="260.27" y="703" text-anchor="middle">60</text>
+<line x1="395.19" y1="150" x2="395.19" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="395.19" y="703" text-anchor="middle">62</text>
+<line x1="530.11" y1="150" x2="530.11" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="530.11" y="703" text-anchor="middle">64</text>
+<line x1="665.03" y1="150" x2="665.03" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="665.03" y="703" text-anchor="middle">66</text>
+<line x1="799.95" y1="150" x2="799.95" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="799.95" y="703" text-anchor="middle">68</text>
+<line x1="934.87" y1="150" x2="934.87" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="934.87" y="703" text-anchor="middle">70</text>
+<line x1="1069.79" y1="150" x2="1069.79" y2="675" stroke="#e2e8f0" stroke-dasharray="5 6"/>
+<text class="tick" x="1069.79" y="703" text-anchor="middle">72</text>
+<line x1="112" y1="150" x2="112" y2="675" stroke="#64748b"/>
+<line x1="112" y1="675" x2="1146" y2="675" stroke="#64748b"/>
+<circle cx="982.98" cy="614.40" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="967.49" cy="601.24" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="1011.08" cy="590.24" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="574.88" cy="452.25" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="731.91" cy="433.35" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="822.41" cy="430.45" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="396.37" cy="204.59" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="686.64" cy="191.10" r="5" fill="#2563eb" opacity="0.22"/>
+<circle cx="665.61" cy="186.44" r="5" fill="#2563eb" opacity="0.22"/>
+<polyline points="982.98,601.24 731.91,433.35 665.61,191.10" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="982.98" cy="601.24" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text class="pointlabel" x="992.98" y="588.24" fill="#2563eb">C1</text>
+<circle cx="731.91" cy="433.35" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text class="pointlabel" x="741.91" y="420.35" fill="#2563eb">C2</text>
+<circle cx="665.61" cy="191.10" r="8" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text class="pointlabel" x="675.61" y="178.10" fill="#2563eb">C4</text>
+<circle cx="731.95" cy="608.26" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="928.95" cy="605.76" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="776.44" cy="600.37" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="402.82" cy="451.23" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="379.29" cy="450.76" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="428.45" cy="444.69" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="246.92" cy="205.13" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="271.74" cy="209.18" r="5" fill="#dc2626" opacity="0.22"/>
+<circle cx="352.53" cy="197.78" r="5" fill="#dc2626" opacity="0.22"/>
+<polyline points="776.44,605.76 402.82,450.76 271.74,205.13" fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="776.44" cy="605.76" r="8" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text class="pointlabel" x="786.44" y="629.76" fill="#dc2626">C1</text>
+<circle cx="402.82" cy="450.76" r="8" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text class="pointlabel" x="412.82" y="474.76" fill="#dc2626">C2</text>
+<circle cx="271.74" cy="205.13" r="8" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text class="pointlabel" x="281.74" y="229.13" fill="#dc2626">C4</text>
+<line x1="776.44" y1="605.76" x2="982.98" y2="601.24" stroke="#64748b" stroke-width="1.4" opacity="0.78" marker-end="url(#arrow)"/>
+<line x1="402.82" y1="450.76" x2="731.91" y2="433.35" stroke="#64748b" stroke-width="1.4" opacity="0.78" marker-end="url(#arrow)"/>
+<line x1="271.74" y1="205.13" x2="665.61" y2="191.10" stroke="#64748b" stroke-width="1.4" opacity="0.78" marker-end="url(#arrow)"/>
+<line x1="72" y1="114" x2="102" y2="114" stroke="#2563eb" stroke-width="3"/>
+<circle cx="87" cy="114" r="6" fill="#2563eb"/>
+<text class="legend" x="112" y="119">Native baseline</text>
+<line x1="307" y1="114" x2="337" y2="114" stroke="#dc2626" stroke-width="3"/>
+<circle cx="322" cy="114" r="6" fill="#dc2626"/>
+<text class="legend" x="347" y="119">Legacy017 A2A Mod</text>
+<text class="label" x="629.00" y="745" text-anchor="middle">P90 decode speed (output tokens/s/user)  → higher is better</text>
+<text class="label" x="28" y="412.50" text-anchor="middle" transform="rotate(-90 28 412.50)">Output throughput (output tokens/s/chip)  → higher is better</text>
+<rect x="770" y="704" width="374" height="34" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+<text x="957" y="726" text-anchor="middle" font-size="12.5" fill="#7f1d1d">Qualification only — not a 900 s public leaderboard submission</text>
+</svg>
